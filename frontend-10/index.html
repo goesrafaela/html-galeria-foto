@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+    <title>Systekna : Galeria de Fotos :: [Preview]</title>
+</head>
+<body>
+    <main>
+        <div id="slideshow" class="slideshow-container">
+            <span class="close" onclick="closeSlideshow()">×</span>
+            <img id="slideshow-img" src="" alt="Slideshow Image">
+        </div>
+
+        <div class="containeer-fotos">
+            <div class="galeria-fotos">
+
+                <div class="galeria-inner">
+
+                    <div class="galeria-item">
+
+                        <div class="row">
+                            <div class="col-3 img" onclick="openSlideshow('foto12.jpg')"><p>Image 01</p></div>
+                            <div class="col-3 img" onclick="openSlideshow('foto12.jpg')"><p>Image 02</p></div>
+                            <div class="col-3 img" onclick="openSlideshow('foto12.jpg')"><p>Image 03</p></div>
+                            <div class="col-3 img" onclick="openSlideshow('foto12.jpg')"><p>Image 04</p></div>
+                        </div>
+        
+                        <div class="row">
+                            <div class="col-3 img" onclick="openSlideshow('foto12.jpg')"><p>Image 05</p></div>
+                            <div class="col-3 img" onclick="openSlideshow('foto12.jpg')"><p>Image 06</p></div>
+                            <div class="col-3 img" onclick="openSlideshow('foto12.jpg')"><p>Image 07</p></div>
+                            <div class="col-3 img" onclick="openSlideshow('foto12.jpg')"><p>Image 08</p></div>
+                        </div>
+        
+                        <div class="row">
+                            <div class="col-3 img" onclick="openSlideshow('foto12.jpg')"><p>Image 09</p></div>
+                            <div class="col-3 img" onclick="openSlideshow('foto12.jpg')"><p>Image 10</p></div>
+                            <div class="col-3 img" onclick="openSlideshow('foto12.jpg')"><p>Image 11</p></div>
+                            <div class="col-3 img" onclick="openSlideshow('foto12.jpg')"><p>Image 12</p></div>
+                        </div>
+
+                    </div>
+
+                    <div class="galeria-item">
+
+                        <div class="row">
+                            <div class="col-3 img" onclick="openSlideshow('foto12.jpg')"><p>Image 13</p></div>
+                            <div class="col-3 img" onclick="openSlideshow('foto12.jpg')"><p>Image 14</p></div>
+                            <div class="col-3 img" onclick="openSlideshow('foto12.jpg')"><p>Image 15</p></div>
+                            <div class="col-3 img" onclick="openSlideshow('foto12.jpg')"><p>Image 16</p></div>
+                        </div> 
+        
+                        <div class="row">
+                            <div class="col-3 img" onclick="openSlideshow('foto12.jpg')"><p>Image 17</p></div>
+                            <div class="col-3 img" onclick="openSlideshow('foto12.jpg')"><p>Image 18</p></div>
+                            <div class="col-3 img" onclick="openSlideshow('foto12.jpg')"><p>Image 19</p></div>
+                            <div class="col-3 img" onclick="openSlideshow('foto12.jpg')"><p>Image 20</p></div>
+                        </div>
+        
+                        <div class="row">
+                            <div class="col-3 img" onclick="openSlideshow('foto12.jpg')"><p>Image 21</p></div>
+                            <div class="col-3 img" onclick="openSlideshow('foto12.jpg')"><p>Image 22</p></div>
+                            <div class="col-3 img" onclick="openSlideshow('foto12.jpg')"><p>Image 23</p></div>
+                            <div class="col-3 img" onclick="openSlideshow('foto12.jpg')"><p>Image 24</p></div>
+                        </div>
+
+                    </div>
+
+                    <div class="galeria-item">
+
+                        <div class="row">
+                            <div class="col-3 img" onclick="openSlideshow('foto12.jpg')"><p>Image 25</p></div>
+                            <div class="col-3 img" onclick="openSlideshow('foto12.jpg')"><p>Image 26</p></div>
+                            <div class="col-3 img" onclick="openSlideshow('foto12.jpg')"><p>Image 27</p></div>
+                            <div class="col-3 img" onclick="openSlideshow('foto12.jpg')"><p>Image 28</p></div>
+                        </div>
+        
+                        <div class="row">
+                            <div class="col-3 img" onclick="openSlideshow('foto12.jpg')"><p>Image 29</p></div>
+                            <div class="col-3 img" onclick="openSlideshow('foto12.jpg')"><p>Image 30</p></div>
+                            <div class="col-3 img" onclick="openSlideshow('foto12.jpg')"><p>Image 31</p></div>
+                            <div class="col-3 img" onclick="openSlideshow('foto12.jpg')"><p>Image 32</p></div>
+                        </div>
+        
+                        <div class="row">
+                            <div class="col-3 img" onclick="openSlideshow('foto12.jpg')"><p>Image 33</p></div>
+                            <div class="col-3 img" onclick="openSlideshow('foto12.jpg')"><p>Image 34</p></div>
+                            <div class="col-3 img" onclick="openSlideshow('foto12.jpg')"><p>Image 35</p></div>
+                            <div class="col-3 img" onclick="openSlideshow('foto12.jpg')"><p>Image 36</p></div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- #region Toolbar - fotos -->
+                <div class="row">
+                    <div class="col-12">
+                        <button onclick="prevSlide()"><i class="ri-arrow-left-s-line"></i></button>
+                        <button onclick="showSlide(1)">1</button>
+                        <button onclick="showSlide(2)">2</button>
+                        <button onclick="showSlide(3)">3</button>
+                        <button onclick="nextSlide()"><i class="ri-arrow-right-s-line"></i></button>
+                    </div>
+                </div>
+                <!-- #endregion -->
+
+            </div>
+        </div>
+    </main>
+
+    <script src="./js/bootstrap.js"></script>
+
+</body>
+</html>
